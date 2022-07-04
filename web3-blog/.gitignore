@@ -46,3 +46,6 @@ artifacts
 .next
 .swc
 /blogcms/node_modules/
+/blogcms/node_modules
+blogcms/node_modules/
+blogcms/node_modules
