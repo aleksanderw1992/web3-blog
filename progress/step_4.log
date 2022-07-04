@@ -1,0 +1,41 @@
+macbook@MacBook-Pro web3-blog % npm run dev
+
+> web3-blog@0.1.0 dev
+> next dev
+
+ready - started server on 0.0.0.0:3000, url: http://localhost:3000
+info  - Loaded env from /Users/macbook/work/web3-blog/web3-blog/.env.local
+event - compiled client and server successfully in 1385 ms (737 modules)
+wait  - compiling /_error (client and server)...
+event - compiled client and server successfully in 213 ms (738 modules)
+wait  - compiling / (client and server)...
+event - compiled client and server successfully in 240 ms (743 modules)
+wait  - compiling /post/[id] (client and server)...
+event - compiled client and server successfully in 496 ms (909 modules)
+error - Error: could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.6.8)
+    at Logger.makeError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at JsonRpcProvider.<anonymous> (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:561:54)
+    at step (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:48:23)
+    at Object.throw (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:29:53)
+    at rejected (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:21:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  reason: 'could not detect network',
+  code: 'NETWORK_ERROR',
+  event: 'noNetwork',
+  page: '/'
+}
+error - Error: could not detect network (event="noNetwork", code=NETWORK_ERROR, version=providers/5.6.8)
+    at Logger.makeError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at JsonRpcProvider.<anonymous> (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:561:54)
+    at step (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:48:23)
+    at Object.throw (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:29:53)
+    at rejected (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:21:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  type: 'Error',
+  reason: 'could not detect network',
+  code: 'NETWORK_ERROR',
+  event: 'noNetwork',
+  page: '/post/[id]'
+}
