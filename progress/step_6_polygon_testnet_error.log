@@ -1,0 +1,63 @@
+
+macbook@MacBook-Pro web3-blog % npm run build && npm start
+
+> web3-blog@0.1.0 build
+> next build
+
+info  - Loaded env from /Users/macbook/work/web3-blog/web3-blog/.env.local
+
+./pages/_app.js
+51:15  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./pages/create-post.js
+102:15  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+102:15  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./pages/edit-post/[id].js
+31:6  Warning: React Hook useEffect has a missing dependency: 'fetchPost'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+112:17  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+112:17  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+./pages/index.js
+39:25  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+58:19  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./pages/post/[id].js
+47:17  Warning: Do not use `<img>` element. Use `<Image />` from `next/image` instead. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+47:17  Warning: img elements must have an alt prop, either with meaningful text, or an empty string for decorative images.  jsx-a11y/alt-text
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/basic-features/eslint#disabling-rules
+info  - Linting and checking validity of types
+info  - Creating an optimized production build
+info  - Compiled successfully
+
+> Build error occurred
+Error: missing revert data in call exception; Transaction reverted without a reason string [ See: https://links.ethers.org/v5-errors-CALL_EXCEPTION ] (data="0x", transaction={"to":"0x5FbDB2315678afecb367f032d93F642f64180aa3","data":"0xabaddd7f","accessList":null}, error={"reason":"processing response error","code":"SERVER_ERROR","body":"{\"jsonrpc\":\"2.0\",\"id\":44,\"error\":{\"code\":-32000,\"message\":\"execution reverted\"}}\n","error":{"code":-32000},"requestBody":"{\"method\":\"eth_call\",\"params\":[{\"to\":\"0x5fbdb2315678afecb367f032d93f642f64180aa3\",\"data\":\"0xabaddd7f\"},\"latest\"],\"id\":44,\"jsonrpc\":\"2.0\"}","requestMethod":"POST","url":"https://matic-mumbai.chainstacklabs.com"}, code=CALL_EXCEPTION, version=providers/5.6.8)
+    at Logger.makeError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/logger/lib/index.js:233:21)
+    at Logger.throwError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/logger/lib/index.js:242:20)
+    at checkError (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:108:16)
+    at JsonRpcProvider.<anonymous> (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:703:47)
+    at step (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:48:23)
+    at Object.throw (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:29:53)
+    at rejected (/Users/macbook/work/web3-blog/web3-blog/node_modules/@ethersproject/providers/lib/json-rpc-provider.js:21:65)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {
+  type: 'Error',
+  reason: 'missing revert data in call exception; Transaction reverted without a reason string',
+  code: 'CALL_EXCEPTION',
+  data: '0x',
+  transaction: {
+    to: '0x5FbDB2315678afecb367f032d93F642f64180aa3',
+    data: '0xabaddd7f',
+    accessList: null
+  },
+  error: {
+    reason: 'processing response error',
+    code: 'SERVER_ERROR',
+    body: '{"jsonrpc":"2.0","id":44,"error":{"code":-32000,"message":"execution reverted"}}\n',
+    error: { code: -32000 },
+    requestBody: '{"method":"eth_call","params":[{"to":"0x5fbdb2315678afecb367f032d93f642f64180aa3","data":"0xabaddd7f"},"latest"],"id":44,"jsonrpc":"2.0"}',
+    requestMethod: 'POST',
+    url: 'https://matic-mumbai.chainstacklabs.com'
+  }
+}
+info  - Collecting page data .%
