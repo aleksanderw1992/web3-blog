@@ -41,3 +41,8 @@ typechain
 #Hardhat files
 cache
 artifacts
+
+#GraphQL
+.next
+.swc
+blogcms/node_modules
